@@ -2,7 +2,7 @@
 Telegram Bot for mod. No credit, free forever. </br> 一款可以帮助您管理群组的机器人，永久免费，简单设置。
 
 # Hosting service
-Contact (Zephyr)[https://t.me/Tzy_Premium] and I will set up **Everything for you**. (With 24/7 uptime)
+Join https://t.me/Tzy_Premium and I will set up **Everything for you**. (With 24/7 uptime)
 
 # Set Up yourself
 `git clone https://github.com/ShellMT/CommunityBot.git`<br />
