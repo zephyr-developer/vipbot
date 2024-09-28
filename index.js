@@ -8,7 +8,7 @@ app.get('/', (req, res) => {
   res.send('Hello Express app!')
 });
 
-app.listen(3000, () => {
+app.listen(process.env.PORT, () => {
   console.log('server started');
 });
 
@@ -56,7 +56,7 @@ bot.action(/approve_(\d+)/, async (ctx) => {
     //await ctx.telegram.deleteMessage(chatId, ctx.message.message_id);
     //await ctx.telegram.editMessageReplyMarkup(chatId, ctx.callbackQuery.message.message_id);
     await ctx.telegram.deleteMessage(chatId, ctx.callbackQuery.message.message_id);
-    await ctx.reply(`恭喜 [${firstName}](tg://user?id=${newMemberId}) ID: \`${newMemberId}\` 获得入群资格。\n您已经自动被解封，如有问题，请找管理员：[Zephyr](tg://user?id=2084292168)。`, {
+    await ctx.reply(`恭喜 [${firstName}](tg://user?id=${newMemberId}) ID: \`${newMemberId}\` 获得入群资格。\n您已经自动被解封。`, {
       parse_mode: 'MarkdownV2'
     });
     await ctx.answerCbQuery(`成功批准了 ${firstName} 的加入`, { show_alert: true });
@@ -95,7 +95,7 @@ bot.action(/kick_(\d+)/, async (ctx) => {
   }
 });
 
-bot.start((ctx) => ctx.reply('本机器人只在群里工作。更多详情请看：https://github.com/ALVINTAN159/vipbot', {disable_web_page_preview: true}));
+bot.start((ctx) => ctx.reply('本机器人只在群里工作。更多详情请看：https://github.com/zephyr-developer/vipbot', {disable_web_page_preview: true}));
 
 bot.catch((error, ctx) => {
   console.error(`Error for ${ctx.updateType}`, error);
