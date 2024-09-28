@@ -12,7 +12,7 @@ Join **[MY TELEGRAM](https://t.me/Tzy_Premium)** or **[DISCORD SERVER](https://d
 
 ##  Set Up yourself
 * `git clone https://github.com/ALVINTAN159/vipbot.git`<br />
-* Replace `.env` file and replace your bot token.</br>
+* Rename `.envexample` file to `.env` and replace your bot token and port if needed.</br>
 * Run `node index.js` in your console.
 
 ### And you are done.<br /><br>
